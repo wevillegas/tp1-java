@@ -8,7 +8,32 @@ public class TP1 {
 
         int ejercicio;
         Scanner teclado = new Scanner(System.in);
-        System.out.println("Ingrese el numero de ejercicio que desea ejecutar");
+        System.out.println("Ingrese el numero (del 1 al 14) del ejercicio que desea ejecutar");
+        System.out.println("------------------------------------------------------------------");
+        System.out.println("1) Ingresar tres números enteros, presentar por pantalla la suma de ellos.");
+        System.out.println("2) Leer dos números enteros presentar por pantalla el promedio de ellos");
+        System.out.println("3) Ingresar dos números enteros y presentar por pantalla la media geométrica.");
+        System.out.println("4) Convertir una medida dada en metros a sus equivalentes en decímetros y centímetros. \n"
+                + "Presentar por pantalla las tres magnitudes con sus respectivas unidades");
+        System.out.println("5) Convertir temperatura en grados Fahrenheit a grados centígrados. Presentar por \n"
+                + "pantalla ambos valores con sus unidades.");
+        System.out.println("6) Ingresar los lados de un rectángulo, presentar por pantalla su perímetro y su superficie.");
+        System.out.println("7) Ingresar el radio de un círculo, presentar por pantalla el diámetro, el perímetro y el área \n"
+                + "del círculo.");
+        System.out.println("8) Dado el precio de un producto indicar, por pantalla, los impuestos que debe pagar. IVA \n"
+                + "21%, Ingresos Brutos 2.5% e Impuesto Municipal 1.5%.");
+        System.out.println("9) Ingresar dos puntos en el plano P1(x1, y1) y P2(x2, y2), estos corresponden, respectivamente, a los vértices inferior izquierdo y superior derecho de un rectángulo. Indicar \n"
+                + "el perímetro y la superficie del rectángulo.");
+        System.out.println("10) Resolver un sistema de dos ecuaciones lineales con dos incógnitas.");
+        System.out.println("11) Ingresar tres valores positivos, indicar si son lados de un triángulo rectángulo. \n"
+                + "Presentar por pantalla el mensaje correspondiente.");
+        System.out.println("12) Ingresar la fecha de nacimiento de una persona con en el formato dd, mm y aaaa. \n"
+                + "Mostrar por pantalla la edad (años, meses y días).");
+        System.out.println("13)  Ingresar tres números enteros, determinar si están ordenados en forma ascendente o \n"
+                + "descendente, y si son consecutivos. Presentar por pantalla el mensaje correspondiente");
+        System.out.println("14) Ingresar tres números, ordenarlos en forma ascendente y presentarlos por pantalla. En \n" +
+"caso de ser iguales imprimir un mensaje que diga que Son Iguales");
+
         ejercicio = teclado.nextInt();
 
         p1 ejercicio1 = new p1();
@@ -68,6 +93,9 @@ public class TP1 {
                 break;
             case 14:
                 ejercicio14.numerosAscendentes();
+                break;
+            default:
+                System.out.println("Numero incorrecto");
                 break;
         }
 
